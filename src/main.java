@@ -1,6 +1,5 @@
 import org.json.JSONObject;
 import sensores.SensorGas;
-
 import java.io.IOException;
 
 public class main {
@@ -13,14 +12,9 @@ public class main {
 
         ManageFile file = new ManageFile();
 
-        file.CreateFile();
+        //file.CreateFile();
         file.WriteFile(gas.request());
 
 
-        
-        
-        
-        
-        
     }
 }

@@ -1,34 +1,31 @@
-import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
+import java.io.*;
 
 public class ManageFile {
 
     public void CreateFile() {
         try {
-            File myObj = new File("filename.txt");
+            File myObj = new File("teste.txt");
             if (myObj.createNewFile()) {
-                System.out.println("File created: " + myObj.getName());
+                System.out.println("Arquivo criado: " + myObj.getName());
             } else {
-                System.out.println("File already exists.");
+                System.out.println("O arquivoooooooo já existe");
             }
         } catch (IOException e) {
-            System.out.println("An error occurred.");
+            System.out.println("Ocorreu um erro");
             e.printStackTrace();
         }
     }
 
     public void WriteFile(String text) {
         try {
-            FileWriter myWriter = new FileWriter("filename.txt");
-            myWriter.write(text);
-            myWriter.close();
-            System.out.println("Successfully wrote to the file.");
+            FileWriter myWriter = new FileWriter("teste.txt", true);
+            BufferedWriter info = new BufferedWriter(myWriter);
+            info.write(text);
+            info.newLine();
+            info.close();
+            System.out.println("Escreveu com sucesso no arquivo");
         } catch (IOException e) {
-            System.out.println("An error occurred.");
-            e.printStackTrace();
+            System.out.println("Ocorreu um erro");
         }
     }
-
-
 }

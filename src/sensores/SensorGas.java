@@ -18,8 +18,6 @@ public class SensorGas {
 
         con.setRequestProperty("Content-Type", "application/json");
 
-        System.out.println(con.getResponseMessage() + " " + con.getResponseCode());
-
         BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
         String inputLine;
         StringBuffer content = new StringBuffer();

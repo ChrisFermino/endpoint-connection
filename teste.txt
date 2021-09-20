@@ -1,0 +1,3 @@
+{"safeLow":1,"standard":1,"fast":1.3,"fastest":2,"currentBaseFee":80.7,"recommendedBaseFee":163.9}
+{"safeLow":1,"standard":1,"fast":1.3,"fastest":2,"currentBaseFee":80.7,"recommendedBaseFee":163.9}
+{"safeLow":1,"standard":1,"fast":1.3,"fastest":2,"currentBaseFee":80.7,"recommendedBaseFee":163.9}
