@@ -27,9 +27,29 @@ public class SensorGas {
         in.close();
         con.disconnect();
 
-        //JSONObject json = new JSONObject(content.toString());
-
         return content.toString();
+    }
+
+    public Object safeLow() throws IOException {
+        JSONObject json = new JSONObject(request());
+        return json.get("safeLow");
+    }
+
+    public Object standard() throws IOException {
+        JSONObject json = new JSONObject(request());
+        return json.get("standard");
+    }
+    public Object fastest() throws IOException {
+        JSONObject json = new JSONObject(request());
+        return json.get("fastest");
+    }
+    public Object currentBaseFee() throws IOException {
+        JSONObject json = new JSONObject(request());
+        return json.get("currentBaseFee");
+    }
+    public Object recommendedBaseFee() throws IOException {
+        JSONObject json = new JSONObject(request());
+        return json.get("recommendedBaseFee");
     }
 
 }
