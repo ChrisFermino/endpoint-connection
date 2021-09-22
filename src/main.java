@@ -1,5 +1,7 @@
 import interfaces.Sensor;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -7,13 +9,25 @@ import java.util.LinkedList;
 
 public class main {
 
+    public static JFrame frame = new JFrame();
+    public static JPanel panelDefault = new JPanel();
+
     public static void main(String[] args) throws IOException {
+        frame.setBounds(100, 100, 500, 350);
+//        frame.setLayout(new FlowLayout());
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        startLeituraSensores();
+
+    }
+
+    public static void startLeituraSensores() throws IOException {
 
         int ciclos = 0;
         int atualizasensores = 10;
         ManageFile manageFile = new ManageFile();
 
         LinkedList<Sensor> sensores = new LinkedList<>();
+
         while (true) {
             if (ciclos % atualizasensores == 0) {
                 System.out.println("TESTE CICLOS" + " - " + ciclos);
@@ -44,7 +58,9 @@ public class main {
             System.out.println("----Leitura dos sensores: ciclo " + ciclos + "----");
             for (Sensor s : sensores) {
                 manageFile.WriteFile(s.toString());
+                frame.getContentPane().add(s.getPanel());
             }
+            frame.setVisible(true);
             try {
                 Thread.sleep(1000);
             } catch (InterruptedException e) {
@@ -52,6 +68,7 @@ public class main {
             }
             ciclos++;
         }
-
     }
+
+
 }

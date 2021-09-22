@@ -1,3 +1,1 @@
 1: Sensor Gas:sensores.SensorGas
-2: Sensor Rand:sensores.SensorRand
-3: Sensor Rand2:sensores.SensorRand2
