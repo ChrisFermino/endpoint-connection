@@ -1,5 +1,6 @@
 package sensores;
 
+import interfaces.Sensor;
 import org.json.JSONObject;
 
 import java.io.BufferedReader;
@@ -9,47 +10,85 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class SensorGas {
+public class SensorGas implements Sensor{
 
-    public String request() throws IOException {
-        URL url = new URL("https://www.etherchain.org/api/gasPriceOracle");
-        HttpURLConnection con = (HttpURLConnection) url.openConnection();
-        con.setRequestMethod("GET");
+    protected String id;
+    protected String name;
+    protected int updateInterval = 10;
+    protected JSONObject json;
 
-        con.setRequestProperty("Content-Type", "application/json");
+    public SensorGas() {
+        this.request();
+    }
 
-        BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
-        String inputLine;
-        StringBuffer content = new StringBuffer();
-        while ((inputLine = in.readLine()) != null) {
-            content.append(inputLine);
+    private void request() {
+        try {
+            URL url = new URL("https://www.etherchain.org/api/gasPriceOracle");
+            HttpURLConnection con = (HttpURLConnection) url.openConnection();
+            con.setRequestMethod("GET");
+
+            con.setRequestProperty("Content-Type", "application/json");
+
+            BufferedReader in = new BufferedReader(new InputStreamReader(con.getInputStream()));
+            StringBuilder content = new StringBuilder();
+            String inputLine;
+
+            while ((inputLine = in.readLine()) != null) {
+                content.append(inputLine);
+            }
+            this.json = new JSONObject(content.toString());
+
+            in.close();
+            con.disconnect();
+
+        }catch (IOException e) {
+            System.out.println("Erro request SensorGas");
         }
-        in.close();
-        con.disconnect();
-
-        return content.toString();
     }
 
-    public Object safeLow() throws IOException {
-        JSONObject json = new JSONObject(request());
-        return json.get("safeLow");
+    @Override
+    public String getId() {
+        return this.id;
     }
 
-    public Object standard() throws IOException {
-        JSONObject json = new JSONObject(request());
-        return json.get("standard");
-    }
-    public Object fastest() throws IOException {
-        JSONObject json = new JSONObject(request());
-        return json.get("fastest");
-    }
-    public Object currentBaseFee() throws IOException {
-        JSONObject json = new JSONObject(request());
-        return json.get("currentBaseFee");
-    }
-    public Object recommendedBaseFee() throws IOException {
-        JSONObject json = new JSONObject(request());
-        return json.get("recommendedBaseFee");
+    @Override
+    public void setId(String id) {
+        this.id = id;
     }
 
+    @Override
+    public String getName() {
+        return this.name;
+    }
+
+    @Override
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    @Override
+    public String getValue(){
+        return this.json.get("currentBaseFee").toString();
+    }
+
+    @Override
+    public String getValue2()  {
+        return this.json.get("recommendedBaseFee").toString();
+    }
+
+    @Override
+    public int getUpdateInterval() {
+        return this.updateInterval;
+    }
+
+    @Override
+    public String toString() {
+        return "SensorGas{" +
+                "id='" + id + '\'' +
+                ", name='" + name + '\'' +
+                ", value=" + getValue() +
+                ", value2=" + getValue2() +
+                ", updateInterval=" + updateInterval +
+                '}';
+    }
 }

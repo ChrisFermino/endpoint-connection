@@ -8,10 +8,10 @@ public class ManageFile {
             if (myObj.createNewFile()) {
                 System.out.println("Arquivo criado: " + myObj.getName());
             } else {
-                System.out.println("O arquivoooooooo já existe");
+                System.out.println("O arquivo já existe");
             }
         } catch (IOException e) {
-            System.out.println("Ocorreu um erro");
+            System.out.println("Ocorreu um erro na criação do arquivo");
             e.printStackTrace();
         }
     }
@@ -25,7 +25,7 @@ public class ManageFile {
             info.close();
             System.out.println("Escreveu com sucesso no arquivo");
         } catch (IOException e) {
-            System.out.println("Ocorreu um erro");
+            System.out.println("Ocorreu um erro na escrita em arquivo");
         }
     }
 }

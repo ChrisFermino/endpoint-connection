@@ -1,10 +1,158 @@
-{"safeLow":1,"standard":1,"fast":1.3,"fastest":2,"currentBaseFee":80.7,"recommendedBaseFee":163.9}
-{"safeLow":1,"standard":1,"fast":1.3,"fastest":2,"currentBaseFee":80.7,"recommendedBaseFee":163.9}
-{"safeLow":1,"standard":1,"fast":1.3,"fastest":2,"currentBaseFee":80.7,"recommendedBaseFee":163.9}
-{"safeLow":1,"standard":1,"fast":1.5,"fastest":2.3,"currentBaseFee":103.8,"recommendedBaseFee":210.7}
-{"safeLow":1,"standard":1,"fast":1.5,"fastest":2.3,"currentBaseFee":103.8,"recommendedBaseFee":210.7}
-{"safeLow":1,"standard":1,"fast":1.5,"fastest":2.3,"currentBaseFee":103.8,"recommendedBaseFee":210.7}
-{"safeLow":1,"standard":1,"fast":1.5,"fastest":2,"currentBaseFee":273.3,"recommendedBaseFee":554.7}
-{"safeLow":1,"standard":1,"fast":1.5,"fastest":2,"currentBaseFee":164.2,"recommendedBaseFee":333.4}
-{"safeLow":1,"standard":1,"fast":1.5,"fastest":2.7,"currentBaseFee":93.9,"recommendedBaseFee":190.7}
-{"safeLow":1,"standard":1,"fast":1.5,"fastest":2.7,"currentBaseFee":95,"recommendedBaseFee":192.9}
+{"safeLow":1,"standard":1,"fast":1.6,"fastest":225,"currentBaseFee":348,"recommendedBaseFee":706.5}
+{"safeLow":1,"standard":1,"fast":1.5,"fastest":6,"currentBaseFee":161.7,"recommendedBaseFee":328.2}
+{"safeLow":1,"standard":1,"fast":1.5,"fastest":6,"currentBaseFee":142.4,"recommendedBaseFee":289.1}
+{"safeLow":1,"standard":1,"fast":1.5,"fastest":6,"currentBaseFee":121,"recommendedBaseFee":245.6}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=3.4934158744048913}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=9.318495058783814}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=12.393823983303374}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=14.821446303912387}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=23.935370163756154}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=29.739514250342374}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=30.833620843938945}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=32.78055560754853}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=42.48837621574454}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=37.62954170252446}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=8.974769922021489}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=9.775905454096247}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=15.117048144772232}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=17.24779140923091}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=13.332844483565927}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=15.981107218979602}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=15.877899448751062}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=17.572753741338786}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=22.847442612179858}
+SensorGas{id='1', name=' Sensor Gas', value=90.8, value2=184.4, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=19.54416946377507}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=5.954253184824455}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=10.849012337890144}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=6.586074010512805}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=9.054486537084529}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=13.683585534725959}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=7.526064928679192}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=16.672139417429555}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=13.338431484036624}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=21.604797058288167}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=21.762022229895763}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=25.260469279779574}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=20.83423148602762}
+SensorGas{id='1', name=' Sensor Gas', value=95.4, value2=193.6, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=22.18977033348431}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=6.728394048868576}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=12.811478336144123}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=14.953613190519974}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=20.060159397721087}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=28.90189054704141}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=9.125412325212018}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=14.566183826512432}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=17.523473348959406}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=13.206214188255741}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=4.217575037250931}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=0.43207740921961424}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=0.5801296392557318}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=8.32600206515354}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=13.383673310961683}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=70.4, value2=142.9, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=21.995247538914498}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=5.121971545562055}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=11.023766325849916}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=12.682412640926385}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=21.816904281840063}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=25.546247006546466}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=32.98780585371764}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=34.489807540024735}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=36.93777896021629}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=43.067733062159846}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=52.72874448807184}
+SensorRand{id=3, name= Sensor Rand2}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=9.584272917205185}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=15.143258216240959}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=15.308325971482045}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=19.773637671899536}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=20.151849270041534}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=23.29838850042848}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=29.665613706360016}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=39.498789065417206}
+SensorGas{id='1', name=' Sensor Gas', value=95.2, value2=193.2, updateInterval=10}
+SensorRand{id=2, name= Sensor Randvalue=48.58942931847011}
