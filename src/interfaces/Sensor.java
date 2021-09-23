@@ -9,12 +9,12 @@ public interface Sensor {
     void setId(String id);
     String getName();
     void setName(String name);
-    Object getValue() throws IOException;
-    Object getValue2() throws IOException;
-    Object getValue3() throws IOException;
-    Object getValue4() throws IOException;
-    Object getValue5() throws IOException;
-    Object getValue6() throws IOException;
+    Object getValue();
+    Object getValue2();
+    Object getValue3();
+    Object getValue4();
+    Object getValue5();
+    Object getValue6();
     String toString();
     JPanel getPanel();
 }
