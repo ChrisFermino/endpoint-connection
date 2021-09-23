@@ -7,7 +7,7 @@ public class ManageFile {
 
     public void CreateFile() {
         try {
-            File myObj = new File("teste.txt");
+            File myObj = new File("dadosSensores.txt");
             if (myObj.createNewFile()) {
                 System.out.println("Arquivo criado: " + myObj.getName());
             } else {
@@ -21,7 +21,7 @@ public class ManageFile {
 
     public void WriteFile(String text) {
         try {
-            FileWriter myWriter = new FileWriter("teste.txt", true);
+            FileWriter myWriter = new FileWriter("dadosSensores.txt", true);
             BufferedWriter info = new BufferedWriter(myWriter);
             info.write(text);
             info.newLine();

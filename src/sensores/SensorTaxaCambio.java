@@ -15,17 +15,7 @@ public class SensorTaxaCambio extends JFrame implements Sensor {
 
     protected String id;
     protected String name;
-    protected int updateInterval = 10;
     protected JSONObject json;
-
-    private JPanel panel;
-    private JTextField txtUsdUnited;
-    private JTextField txtBrlBrazilian;
-    private JTextField textField_2;
-    private JTextField txtExchangeRate;
-    private JTextField txtTaxaDeCmbio;
-    private JTextField txtltimaAtualizao;
-    private JTextField txtLastRefreshed;
 
     public SensorTaxaCambio() {
         this.request();
@@ -57,6 +47,14 @@ public class SensorTaxaCambio extends JFrame implements Sensor {
     }
 
     public JPanel getPanel() {
+
+        JTextField txtUsdUnited;
+        JTextField txtBrlBrazilian;
+        JTextField textField_2;
+        JTextField txtExchangeRate;
+        JTextField txtTaxaDeCmbio;
+        JTextField txtltimaAtualizao;
+        JTextField txtLastRefreshed;
 
         JPanel panel = new JPanel();
         panel.setBounds(10, 11, 454, 279);
@@ -169,13 +167,8 @@ public class SensorTaxaCambio extends JFrame implements Sensor {
     }
 
     @Override
-    public int getUpdateInterval() {
-        return this.updateInterval;
-    }
-
-    @Override
     public String toString() {
-        return "SensorTaxaCambio{" +
-                "id='" + id + '\'' + ", name='" + name + '\'' + ", safelow" + getValue3() + '}';
+        return getName() + ", ID: " + getId() + ", {From Currency: " + getValue() + ", To Currency: "
+                + getValue2() + ", Exchange Rate: " + getValue3() + ", Last Refreshed" + getValue4();
     }
 }

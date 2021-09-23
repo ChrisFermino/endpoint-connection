@@ -10,7 +10,7 @@ import java.util.LinkedList;
 public class main {
 
     public static JFrame frame = new JFrame();
-    public static JPanel panelDefault = new JPanel();
+//    public static JPanel panelDefault = new JPanel();
 
     public static void main(String[] args) throws IOException {
         frame.setBounds(100, 100, 1500, 400);
@@ -38,7 +38,7 @@ public class main {
 
                 String line = null;
                 while ((line = br.readLine()) != null) {
-                    String dsensor[] = line.split(":");
+                    String[] dsensor = line.split(":");
                     Sensor s = null;
                     try {
                         s = (Sensor) Class.forName(dsensor[2]).newInstance();

@@ -16,23 +16,7 @@ public class SensorGas extends JFrame implements Sensor {
 
     protected String id;
     protected String name;
-    protected int updateInterval = 10;
     protected JSONObject json;
-
-    private JPanel contentPane;
-    private JTextField txtRecommendedbasefee;
-    private JTextField txtCurrentbasefee;
-    private JTextField txtSafelow;
-    private JTextField txtFast_1;
-    private JTextField txtStandard;
-    private JTextField txtFastest;
-    private JTextField txtCurrentBaseFee;
-    private JTextField txtSuggestedMaxFee;
-    private JTextField txtBaseFee;
-    private JTextField txtFast;
-    private JTextField txtFastestconfirmsIn;
-    private JTextField txtSaveLow;
-    private JTextField txtNormal;
 
     public SensorGas() {
         this.request();
@@ -64,6 +48,20 @@ public class SensorGas extends JFrame implements Sensor {
     }
 
     public JPanel getPanel() {
+
+        JTextField txtRecommendedbasefee;
+        JTextField txtCurrentbasefee;
+        JTextField txtSafelow;
+        JTextField txtFast_1;
+        JTextField txtStandard;
+        JTextField txtFastest;
+        JTextField txtCurrentBaseFee;
+        JTextField txtSuggestedMaxFee;
+        JTextField txtBaseFee;
+        JTextField txtFast;
+        JTextField txtFastestconfirmsIn;
+        JTextField txtSaveLow;
+        JTextField txtNormal;
 
         JPanel panel = new JPanel();
         panel.setBounds(10, 11, 454, 279);
@@ -213,12 +211,7 @@ public class SensorGas extends JFrame implements Sensor {
     }
 
     @Override
-    public int getUpdateInterval() {
-        return this.updateInterval;
-    }
-
-    @Override
     public String toString() {
-        return "SensorGas{";
+        return getName() + ", ID: " + getId() + ", " + json.toString();
     }
 }

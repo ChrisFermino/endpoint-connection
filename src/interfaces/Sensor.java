@@ -5,29 +5,16 @@ import java.io.IOException;
 
 public interface Sensor {
 
-    public abstract String getId();
-
-    public abstract void setId(String id);
-
-    public abstract String getName();
-
-    public abstract void setName(String name);
-
-    public abstract Object getValue() throws IOException;
-
-    public abstract Object getValue2() throws IOException;
-
-    public abstract Object getValue3() throws IOException;
-
-    public abstract Object getValue4() throws IOException;
-
-    public abstract Object getValue5() throws IOException;
-
-    public abstract Object getValue6() throws IOException;
-
-    public abstract int getUpdateInterval();
-
-    public abstract String toString();
-
-    public abstract JPanel getPanel();
+    String getId();
+    void setId(String id);
+    String getName();
+    void setName(String name);
+    Object getValue() throws IOException;
+    Object getValue2() throws IOException;
+    Object getValue3() throws IOException;
+    Object getValue4() throws IOException;
+    Object getValue5() throws IOException;
+    Object getValue6() throws IOException;
+    String toString();
+    JPanel getPanel();
 }
