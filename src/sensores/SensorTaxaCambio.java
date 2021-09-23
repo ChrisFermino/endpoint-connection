@@ -59,7 +59,7 @@ public class SensorTaxaCambio extends JFrame implements Sensor{
 
     private void request() {
         try {
-            URL url = new URL("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=JPY&apikey=ZCKH058NVWR67WTW");
+            URL url = new URL("https://www.alphavantage.co/query?function=CURRENCY_EXCHANGE_RATE&from_currency=USD&to_currency=BRL&apikey=ZCKH058NVWR67WTW");
             HttpURLConnection con = (HttpURLConnection) url.openConnection();
             con.setRequestMethod("GET");
 
@@ -215,27 +215,33 @@ public class SensorTaxaCambio extends JFrame implements Sensor{
 
     @Override
     public String getValue2()  {
-        return this.json.get("1. From_Currency Code").toString();
+        String json2 = this.json.get("Realtime Currency Exchange Rate").toString();
+        JSONObject abc = new JSONObject(json2);
+        return abc.get("1. From_Currency Code").toString();
     }
 
     @Override
     public String getValue3()  {
-        return this.json.get("3. To_Currency Code").toString();
+//        return this.json.get("3. To_Currency Code").toString();
+        return " ";
     }
 
     @Override
     public String getValue4()  {
-        return this.json.get("5. Exchange Rate").toString();
+//        return this.json.get("5. Exchange Rate").toString();
+        return " ";
     }
 
     @Override
     public String getValue5()  {
-        return this.json.get("6. Last Refreshed").toString();
+//        return this.json.get("6. Last Refreshed").toString();
+        return " ";
     }
 
     @Override
     public String getValue6()  {
-        return this.json.get("7. Time Zone").toString();
+//        return this.json.get("7. Time Zone").toString();
+        return " ";
     }
 
     @Override

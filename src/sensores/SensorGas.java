@@ -26,6 +26,7 @@ import javax.swing.JDesktopPane;
 import javax.swing.JTextField;
 import javax.swing.SwingConstants;
 import java.awt.Color;
+import java.util.ArrayList;
 import java.util.Random;
 
 
@@ -35,8 +36,8 @@ public class SensorGas extends JFrame implements Sensor{
     protected String name;
     protected int updateInterval = 10;
     protected JSONObject json;
+    protected ArrayList<String> records = new ArrayList<>();
 
-    private static final Random RND = new Random();
 
     private JPanel contentPane;
     private JTextField txtRecommendedbasefee;
@@ -95,7 +96,7 @@ public class SensorGas extends JFrame implements Sensor{
         txtRecommendedbasefee.setColumns(10);
 
         txtCurrentbasefee = new JTextField();
-        txtCurrentbasefee.setText(this.getValue().toString());
+        txtCurrentbasefee.setText(this.getValue());
         txtCurrentbasefee.setColumns(10);
         txtCurrentbasefee.setBounds(10, 53, 209, 31);
         txtCurrentbasefee.setHorizontalAlignment(JTextField.CENTER);
@@ -131,14 +132,14 @@ public class SensorGas extends JFrame implements Sensor{
 
         txtCurrentBaseFee = new JTextField("Current base fee");
         txtCurrentBaseFee.setColumns(10);
-        txtCurrentBaseFee.setBounds(10, 34, 209, 20);
+        txtCurrentBaseFee.setBounds(10, 33, 209, 20);
         txtCurrentBaseFee.setHorizontalAlignment(JTextField.CENTER);
         panel.add(txtCurrentBaseFee);
 
         txtSuggestedMaxFee = new JTextField();
         txtSuggestedMaxFee.setText("Suggested max. fee");
         txtSuggestedMaxFee.setColumns(10);
-        txtSuggestedMaxFee.setBounds(235, 34, 209, 20);
+        txtSuggestedMaxFee.setBounds(235, 33, 209, 20);
         txtSuggestedMaxFee.setHorizontalAlignment(JTextField.CENTER);
         panel.add(txtSuggestedMaxFee);
 
@@ -154,28 +155,28 @@ public class SensorGas extends JFrame implements Sensor{
         txtFast.setText("Fast (<1-2mins to confirm)");
         txtFast.setHorizontalAlignment(SwingConstants.CENTER);
         txtFast.setColumns(10);
-        txtFast.setBounds(10, 171, 209, 20);
+        txtFast.setBounds(10, 170, 209, 20);
         panel.add(txtFast);
 
         txtFastestconfirmsIn = new JTextField();
         txtFastestconfirmsIn.setText("Fastest (Confirms in 1-2 blocks)");
         txtFastestconfirmsIn.setHorizontalAlignment(SwingConstants.CENTER);
         txtFastestconfirmsIn.setColumns(10);
-        txtFastestconfirmsIn.setBounds(235, 171, 209, 20);
+        txtFastestconfirmsIn.setBounds(235, 170, 209, 20);
         panel.add(txtFastestconfirmsIn);
 
         txtSaveLow = new JTextField();
-        txtSaveLow.setText("Save low (<30mins to confirm)");
+        txtSaveLow.setText("Safe low (<30mins to confirm)");
         txtSaveLow.setHorizontalAlignment(SwingConstants.CENTER);
         txtSaveLow.setColumns(10);
-        txtSaveLow.setBounds(10, 102, 209, 20);
+        txtSaveLow.setBounds(10, 98, 209, 20);
         panel.add(txtSaveLow);
 
         txtNormal = new JTextField();
         txtNormal.setText("Normal (<5mins to confirm)");
         txtNormal.setHorizontalAlignment(SwingConstants.CENTER);
         txtNormal.setColumns(10);
-        txtNormal.setBounds(235, 102, 209, 20);
+        txtNormal.setBounds(235, 98, 209, 20);
         panel.add(txtNormal);
 
         return panel;
@@ -202,15 +203,8 @@ public class SensorGas extends JFrame implements Sensor{
     }
 
     @Override
-    public Double getValue(){
-        int soma = RND.nextInt() % 5;
-        double value = 0;
-        if (soma < 3){
-            value = Math.abs((value + RND.nextDouble()*10) % 101);
-        } else {
-            value = Math.abs((value - RND.nextDouble()*10) % 101);
-        }
-        return value;
+    public String getValue(){
+        return this.json.get("currentBaseFee").toString();
     }
 
     @Override

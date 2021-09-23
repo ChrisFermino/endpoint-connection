@@ -23,7 +23,7 @@ public class main {
     public static void startLeituraSensores() throws IOException {
 
         int ciclos = 0;
-        int atualizasensores = 10;
+        int atualizasensores = 2;
         ManageFile manageFile = new ManageFile();
 
         LinkedList<Sensor> sensores = new LinkedList<>();
@@ -56,13 +56,18 @@ public class main {
             }
 
             System.out.println("----Leitura dos sensores: ciclo " + ciclos + "----");
+            frame.getContentPane().removeAll();
+            Box sensoresPanel = Box.createVerticalBox();
             for (Sensor s : sensores) {
                 manageFile.WriteFile(s.toString());
-                frame.getContentPane().add(s.getPanel());
+                sensoresPanel.add(s.getPanel());
             }
+            frame.setLayout(new BorderLayout());
+            frame.getContentPane().add(sensoresPanel, BorderLayout.CENTER);
             frame.setVisible(true);
+
             try {
-                Thread.sleep(1000);
+                Thread.sleep(20000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

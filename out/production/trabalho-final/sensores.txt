@@ -1,1 +1,2 @@
 1: Sensor Gas:sensores.SensorGas
+2: SensorTaxaCambio:sensores.SensorTaxaCambio
