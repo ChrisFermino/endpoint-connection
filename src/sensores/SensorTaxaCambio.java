@@ -11,7 +11,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class SensorTaxaCambio extends JFrame implements Sensor {
+public class SensorTaxaCambio implements Sensor {
 
     protected String id;
     protected String name;

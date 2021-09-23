@@ -12,7 +12,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 
 
-public class SensorGas extends JFrame implements Sensor {
+public class SensorGas implements Sensor {
 
     protected String id;
     protected String name;

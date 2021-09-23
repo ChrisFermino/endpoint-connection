@@ -252,3 +252,61 @@ SensorRand{id=3, name= Sensor Rand, RNDValue8.405669603189864}
  Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":66.2,"fastest":6.9,"safeLow":1,"recommendedBaseFee":134.3}
  Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30320000, Last Refreshed2021-09-23 18:50:01
 SensorRand{id=3, name= Sensor Rand, RNDValue3.7157231613177744}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":73.9,"fastest":6.9,"safeLow":1,"recommendedBaseFee":150}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30400000, Last Refreshed2021-09-23 18:56:42
+SensorRand{id=3, name= Sensor Rand, RNDValue6.453895158536097}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":79.7,"fastest":6.9,"safeLow":1,"recommendedBaseFee":161.9}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30450000, Last Refreshed2021-09-23 18:57:02
+SensorRand{id=3, name= Sensor Rand, RNDValue9.495168328162816}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":79.7,"fastest":6.9,"safeLow":1,"recommendedBaseFee":161.9}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30450000, Last Refreshed2021-09-23 18:57:02
+SensorRand{id=3, name= Sensor Rand, RNDValue18.745231616471976}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":79.7,"fastest":6.9,"safeLow":1,"recommendedBaseFee":161.9}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30260000, Last Refreshed2021-09-23 18:57:23
+SensorRand{id=3, name= Sensor Rand, RNDValue8.587784882890316}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":79.7,"fastest":6.9,"safeLow":1,"recommendedBaseFee":161.9}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30260000, Last Refreshed2021-09-23 18:57:23
+SensorRand{id=3, name= Sensor Rand, RNDValue17.664725581293634}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":79.7,"fastest":6.9,"safeLow":1,"recommendedBaseFee":161.9}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30300000, Last Refreshed2021-09-23 18:58:00
+SensorRand{id=3, name= Sensor Rand, RNDValue4.128920169596376}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":79.7,"fastest":6.9,"safeLow":1,"recommendedBaseFee":161.9}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30300000, Last Refreshed2021-09-23 18:58:00
+SensorRand{id=3, name= Sensor Rand, RNDValue0.9536716215552872}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":64.2,"fastest":6.9,"safeLow":1,"recommendedBaseFee":130.3}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30130000, Last Refreshed2021-09-23 18:58:21
+SensorRand{id=3, name= Sensor Rand, RNDValue2.75250640649916}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":64.2,"fastest":6.9,"safeLow":1,"recommendedBaseFee":130.3}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30130000, Last Refreshed2021-09-23 18:58:21
+SensorRand{id=3, name= Sensor Rand, RNDValue12.269286249549507}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":77.6,"fastest":6.9,"safeLow":1,"recommendedBaseFee":157.6}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30270000, Last Refreshed2021-09-23 19:01:01
+SensorRand{id=3, name= Sensor Rand, RNDValue8.613194014861868}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":77.6,"fastest":6.9,"safeLow":1,"recommendedBaseFee":157.6}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30270000, Last Refreshed2021-09-23 19:01:01
+SensorRand{id=3, name= Sensor Rand, RNDValue26.036033683509906}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":90,"fastest":4.4,"safeLow":1,"recommendedBaseFee":182.8}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30300000, Last Refreshed2021-09-23 19:01:22
+SensorRand{id=3, name= Sensor Rand, RNDValue8.518380856989777}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":90,"fastest":4.4,"safeLow":1,"recommendedBaseFee":182.8}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30300000, Last Refreshed2021-09-23 19:01:22
+SensorRand{id=3, name= Sensor Rand, RNDValue5.518117251774225}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":90,"fastest":4.4,"safeLow":1,"recommendedBaseFee":182.8}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30320000, Last Refreshed2021-09-23 19:02:01
+SensorRand{id=3, name= Sensor Rand, RNDValue0.21906380277930015}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":90,"fastest":4.4,"safeLow":1,"recommendedBaseFee":182.8}
+ Sensor Taxa Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30320000, Last Refreshed2021-09-23 19:02:01
+SensorRand{id=3, name= Sensor Rand, RNDValue2.9938243256025476}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":90,"fastest":4.4,"safeLow":1,"recommendedBaseFee":182.8}
+SensorRand{id=3, name= Sensor Rand, RNDValue3.43756851536704}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":90,"fastest":4.4,"safeLow":1,"recommendedBaseFee":182.8}
+SensorRand{id=3, name= Sensor Rand, RNDValue17.072929676247472}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":85.7,"fastest":4.4,"safeLow":1,"recommendedBaseFee":173.9}
+SensorRand{id=3, name= Sensor Rand, RNDValue8.232294023567654}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":63.3,"fastest":4.4,"safeLow":1,"recommendedBaseFee":128.4}
+SensorRand{id=3, name= Sensor Rand, RNDValue9.859985563493426}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":63.3,"fastest":4.4,"safeLow":1,"recommendedBaseFee":128.4}
+SensorRand{id=3, name= Sensor Rand, RNDValue9.585850274570076}
+ Sensor Gas, ID: 1, {"standard":1,"fast":1.5,"currentBaseFee":63.3,"fastest":4.4,"safeLow":1,"recommendedBaseFee":128.4}
+ Sensor Cambio, ID: 2, {From Currency: USD - United States Dollar, To Currency: BRL - Brszilian Real, Exchange Rate: 5.30930000, Last Refreshed2021-09-23 19:14:21
+SensorRand{id=3, name= Sensor Rand, RNDValue1.8367447562726846}
