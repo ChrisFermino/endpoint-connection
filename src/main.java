@@ -13,8 +13,7 @@ public class main {
     public static JPanel panelDefault = new JPanel();
 
     public static void main(String[] args) throws IOException {
-        frame.setBounds(100, 100, 500, 350);
-//        frame.setLayout(new FlowLayout());
+        frame.setBounds(100, 100, 1500, 400);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         startLeituraSensores();
 
@@ -57,7 +56,7 @@ public class main {
 
             System.out.println("----Leitura dos sensores: ciclo " + ciclos + "----");
             frame.getContentPane().removeAll();
-            Box sensoresPanel = Box.createVerticalBox();
+            Box sensoresPanel = Box.createHorizontalBox();
             for (Sensor s : sensores) {
                 manageFile.WriteFile(s.toString());
                 sensoresPanel.add(s.getPanel());
@@ -67,7 +66,7 @@ public class main {
             frame.setVisible(true);
 
             try {
-                Thread.sleep(20000);
+                Thread.sleep(10000);
             } catch (InterruptedException e) {
                 e.printStackTrace();
             }

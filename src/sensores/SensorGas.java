@@ -1,43 +1,23 @@
 package sensores;
 
-import com.sun.tools.javac.Main;
 import interfaces.Sensor;
 import org.json.JSONObject;
 
+import javax.swing.*;
+import java.awt.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import java.awt.FlowLayout;
-import java.awt.GridBagLayout;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.BoxLayout;
-import javax.swing.JTabbedPane;
-import javax.swing.JDesktopPane;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import java.awt.Color;
-import java.util.ArrayList;
-import java.util.Random;
-
-
-public class SensorGas extends JFrame implements Sensor{
+public class SensorGas extends JFrame implements Sensor {
 
     protected String id;
     protected String name;
     protected int updateInterval = 10;
     protected JSONObject json;
-    protected ArrayList<String> records = new ArrayList<>();
-
 
     private JPanel contentPane;
     private JTextField txtRecommendedbasefee;
@@ -78,7 +58,7 @@ public class SensorGas extends JFrame implements Sensor{
             in.close();
             con.disconnect();
 
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Erro request SensorGas");
         }
     }
@@ -203,32 +183,32 @@ public class SensorGas extends JFrame implements Sensor{
     }
 
     @Override
-    public String getValue(){
+    public String getValue() {
         return this.json.get("currentBaseFee").toString();
     }
 
     @Override
-    public String getValue2()  {
+    public String getValue2() {
         return this.json.get("recommendedBaseFee").toString();
     }
 
     @Override
-    public String getValue3()  {
+    public String getValue3() {
         return this.json.get("safeLow").toString();
     }
 
     @Override
-    public String getValue4()  {
+    public String getValue4() {
         return this.json.get("standard").toString();
     }
 
     @Override
-    public String getValue5()  {
+    public String getValue5() {
         return this.json.get("fastest").toString();
     }
 
     @Override
-    public String getValue6()  {
+    public String getValue6() {
         return this.json.get("fast").toString();
     }
 
@@ -239,7 +219,6 @@ public class SensorGas extends JFrame implements Sensor{
 
     @Override
     public String toString() {
-        return "SensorGas{" +
-                "id='" + id + '\'' + ", name='" + name + '\'' + ", safelow" + getValue3() + '}';
+        return "SensorGas{";
     }
 }

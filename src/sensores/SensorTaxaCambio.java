@@ -1,57 +1,31 @@
 package sensores;
 
-import com.sun.tools.javac.Main;
 import interfaces.Sensor;
 import org.json.JSONObject;
 
+import javax.swing.*;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
-import java.awt.BorderLayout;
-import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
-import javax.swing.border.EmptyBorder;
-import java.awt.FlowLayout;
-import java.awt.GridBagLayout;
-import javax.swing.GroupLayout;
-import javax.swing.GroupLayout.Alignment;
-import javax.swing.BoxLayout;
-import javax.swing.JTabbedPane;
-import javax.swing.JDesktopPane;
-import javax.swing.JTextField;
-import javax.swing.SwingConstants;
-import java.awt.Color;
-import java.util.Random;
-
-
-public class SensorTaxaCambio extends JFrame implements Sensor{
+public class SensorTaxaCambio extends JFrame implements Sensor {
 
     protected String id;
     protected String name;
     protected int updateInterval = 10;
     protected JSONObject json;
 
-    private static final Random RND = new Random();
-
-    private JPanel contentPane;
-    private JTextField txtRecommendedbasefee;
-    private JTextField txtCurrentbasefee;
-    private JTextField txtSafelow;
-    private JTextField txtFast_1;
-    private JTextField txtStandard;
-    private JTextField txtFastest;
-    private JTextField txtCurrentBaseFee;
-    private JTextField txtSuggestedMaxFee;
-    private JTextField txtBaseFee;
-    private JTextField txtFast;
-    private JTextField txtFastestconfirmsIn;
-    private JTextField txtSaveLow;
-    private JTextField txtNormal;
+    private JPanel panel;
+    private JTextField txtUsdUnited;
+    private JTextField txtBrlBrazilian;
+    private JTextField textField_2;
+    private JTextField txtExchangeRate;
+    private JTextField txtTaxaDeCmbio;
+    private JTextField txtltimaAtualizao;
+    private JTextField txtLastRefreshed;
 
     public SensorTaxaCambio() {
         this.request();
@@ -77,7 +51,7 @@ public class SensorTaxaCambio extends JFrame implements Sensor{
             in.close();
             con.disconnect();
 
-        }catch (IOException e) {
+        } catch (IOException e) {
             System.out.println("Erro request SensorTaxaCambio");
         }
     }
@@ -88,95 +62,54 @@ public class SensorTaxaCambio extends JFrame implements Sensor{
         panel.setBounds(10, 11, 454, 279);
         panel.setLayout(null);
 
-        txtRecommendedbasefee = new JTextField(this.getValue2());
-        txtRecommendedbasefee.setBounds(235, 53, 209, 31);
-        txtRecommendedbasefee.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtRecommendedbasefee);
-        txtRecommendedbasefee.setColumns(10);
+        txtUsdUnited = new JTextField();
+        txtUsdUnited.setText("USD - United States Dollar");
+        txtUsdUnited.setHorizontalAlignment(JTextField.CENTER);
+        txtUsdUnited.setBounds(45, 68, 163, 50);
+        panel.add(txtUsdUnited);
+        txtUsdUnited.setColumns(10);
 
-        txtCurrentbasefee = new JTextField();
-        txtCurrentbasefee.setText(this.getValue().toString());
-        txtCurrentbasefee.setColumns(10);
-        txtCurrentbasefee.setBounds(10, 53, 209, 31);
-        txtCurrentbasefee.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtCurrentbasefee);
+        txtBrlBrazilian = new JTextField();
+        txtBrlBrazilian.setText("BRL - Brazilian Real");
+        txtBrlBrazilian.setHorizontalAlignment(JTextField.CENTER);
+        txtBrlBrazilian.setBounds(218, 68, 163, 50);
+        panel.add(txtBrlBrazilian);
+        txtBrlBrazilian.setColumns(10);
 
-        txtSafelow = new JTextField();
-        txtSafelow.setText(this.getValue3());
-        txtSafelow.setColumns(10);
-        txtSafelow.setBounds(10, 118, 209, 31);
-        txtSafelow.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtSafelow);
+        textField_2 = new JTextField();
+        textField_2.setText("1");
+        textField_2.setHorizontalAlignment(JTextField.CENTER);
+        textField_2.setColumns(10);
+        textField_2.setBounds(45, 129, 163, 20);
+        panel.add(textField_2);
 
-        txtFast_1 = new JTextField();
-        txtFast_1.setText(this.getValue6());
-        txtFast_1.setColumns(10);
-        txtFast_1.setBounds(10, 190, 209, 31);
-        txtFast_1.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtFast_1);
+        txtExchangeRate = new JTextField();
+        txtExchangeRate.setText(getValue3());
+        txtExchangeRate.setHorizontalAlignment(JTextField.CENTER);
+        txtExchangeRate.setColumns(10);
+        txtExchangeRate.setBounds(218, 129, 163, 20);
+        panel.add(txtExchangeRate);
 
-        txtStandard = new JTextField();
-        txtStandard.setText(this.getValue4());
-        txtStandard.setColumns(10);
-        txtStandard.setBounds(235, 118, 209, 31);
-        txtStandard.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtStandard);
+        txtTaxaDeCmbio = new JTextField();
+        txtTaxaDeCmbio.setText("Taxa de Câmbio USD / BRL");
+        txtTaxaDeCmbio.setHorizontalAlignment(JTextField.CENTER);
+        txtTaxaDeCmbio.setBounds(45, 16, 336, 41);
+        panel.add(txtTaxaDeCmbio);
+        txtTaxaDeCmbio.setColumns(10);
 
-        txtFastest = new JTextField();
-        txtFastest.setText(this.getValue5());
-        txtFastest.setColumns(10);
-        txtFastest.setBounds(235, 190, 209, 31);
-        txtFastest.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtFastest);
+        txtltimaAtualizao = new JTextField();
+        txtltimaAtualizao.setText("\u00DAltima atualiza\u00E7\u00E3o:");
+        txtltimaAtualizao.setHorizontalAlignment(JTextField.CENTER);
+        txtltimaAtualizao.setBounds(45, 160, 336, 20);
+        panel.add(txtltimaAtualizao);
+        txtltimaAtualizao.setColumns(10);
 
-        txtCurrentBaseFee = new JTextField("Current base fee");
-        txtCurrentBaseFee.setColumns(10);
-        txtCurrentBaseFee.setBounds(10, 34, 209, 20);
-        txtCurrentBaseFee.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtCurrentBaseFee);
-
-        txtSuggestedMaxFee = new JTextField();
-        txtSuggestedMaxFee.setText("Suggested max. fee");
-        txtSuggestedMaxFee.setColumns(10);
-        txtSuggestedMaxFee.setBounds(235, 34, 209, 20);
-        txtSuggestedMaxFee.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtSuggestedMaxFee);
-
-        txtBaseFee = new JTextField();
-        txtBaseFee.setForeground(Color.BLACK);
-        txtBaseFee.setText("Base fee");
-        txtBaseFee.setBounds(184, 11, 86, 20);
-        txtBaseFee.setHorizontalAlignment(JTextField.CENTER);
-        panel.add(txtBaseFee);
-        txtBaseFee.setColumns(10);
-
-        txtFast = new JTextField();
-        txtFast.setText("Fast (<1-2mins to confirm)");
-        txtFast.setHorizontalAlignment(SwingConstants.CENTER);
-        txtFast.setColumns(10);
-        txtFast.setBounds(10, 171, 209, 20);
-        panel.add(txtFast);
-
-        txtFastestconfirmsIn = new JTextField();
-        txtFastestconfirmsIn.setText("Fastest (Confirms in 1-2 blocks)");
-        txtFastestconfirmsIn.setHorizontalAlignment(SwingConstants.CENTER);
-        txtFastestconfirmsIn.setColumns(10);
-        txtFastestconfirmsIn.setBounds(235, 171, 209, 20);
-        panel.add(txtFastestconfirmsIn);
-
-        txtSaveLow = new JTextField();
-        txtSaveLow.setText("Save low (<30mins to confirm)");
-        txtSaveLow.setHorizontalAlignment(SwingConstants.CENTER);
-        txtSaveLow.setColumns(10);
-        txtSaveLow.setBounds(10, 102, 209, 20);
-        panel.add(txtSaveLow);
-
-        txtNormal = new JTextField();
-        txtNormal.setText("Normal (<5mins to confirm)");
-        txtNormal.setHorizontalAlignment(SwingConstants.CENTER);
-        txtNormal.setColumns(10);
-        txtNormal.setBounds(235, 102, 209, 20);
-        panel.add(txtNormal);
+        txtLastRefreshed = new JTextField();
+        txtLastRefreshed.setText(getValue4());
+        txtLastRefreshed.setHorizontalAlignment(JTextField.CENTER);
+        txtLastRefreshed.setBounds(45, 182, 336, 20);
+        panel.add(txtLastRefreshed);
+        txtLastRefreshed.setColumns(10);
 
         return panel;
     }
@@ -202,45 +135,36 @@ public class SensorTaxaCambio extends JFrame implements Sensor{
     }
 
     @Override
-    public Double getValue(){
-        int soma = RND.nextInt() % 5;
-        double value = 0;
-        if (soma < 3){
-            value = Math.abs((value + RND.nextDouble()*10) % 101);
-        } else {
-            value = Math.abs((value - RND.nextDouble()*10) % 101);
-        }
-        return value;
+    public String getValue() {
+        return "USD - United States Dollar";
     }
 
     @Override
-    public String getValue2()  {
-        String json2 = this.json.get("Realtime Currency Exchange Rate").toString();
-        JSONObject abc = new JSONObject(json2);
-        return abc.get("1. From_Currency Code").toString();
+    public String getValue2() {
+        return "BRL - Brszilian Real";
     }
 
     @Override
-    public String getValue3()  {
-//        return this.json.get("3. To_Currency Code").toString();
+    public String getValue3() {
+        String jsonString = this.json.get("Realtime Currency Exchange Rate").toString();
+        JSONObject json2 = new JSONObject(jsonString);
+        return json2.get("5. Exchange Rate").toString();
+    }
+
+    @Override
+    public String getValue4() {
+        String jsonString = this.json.get("Realtime Currency Exchange Rate").toString();
+        JSONObject json2 = new JSONObject(jsonString);
+        return json2.get("6. Last Refreshed").toString();
+    }
+
+    @Override
+    public String getValue5() {
         return " ";
     }
 
     @Override
-    public String getValue4()  {
-//        return this.json.get("5. Exchange Rate").toString();
-        return " ";
-    }
-
-    @Override
-    public String getValue5()  {
-//        return this.json.get("6. Last Refreshed").toString();
-        return " ";
-    }
-
-    @Override
-    public String getValue6()  {
-//        return this.json.get("7. Time Zone").toString();
+    public String getValue6() {
         return " ";
     }
 
